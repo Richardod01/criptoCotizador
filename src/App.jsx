@@ -2,7 +2,6 @@ import { useState } from 'react'
 import styled from '@emotion/styled'
 import ImagenCripto from './img/imagen-criptos.png'
 import Formulario from './components/Formulario'
-import useSelectMonedas from './hooks/useSelectMonedas'
 
 const Contenedor = styled.div`
   max-width: 900px;
@@ -42,9 +41,7 @@ const Heading = styled.h1`
 
 function App() {
 
-  const [SelectMonedas] = useSelectMonedas();
   
-  SelectMonedas()
 
   return (
     <Contenedor>
